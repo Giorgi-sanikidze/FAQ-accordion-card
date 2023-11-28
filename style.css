@@ -79,17 +79,18 @@ h2{
 .question{
     color: #1E1F36;
     transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
-.question:hover{
-    font-weight: bold;
-}
+
 .answer{
-    display: none;
-    transition: 1s;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
 }
 
 .image{
     height: 100%;
+    cursor: pointer;
 }
 
 
