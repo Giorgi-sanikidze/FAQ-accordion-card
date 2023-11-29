@@ -33,12 +33,13 @@ let answers = document.querySelectorAll(".answer");
 
 
         image.addEventListener("click", () => {
-            if (answer.style.display == "block") {
-                answer.style.display = "none";
-                question.style.fontWeight = 'normal'
-            } else {
-                answer.style.display = "block";
+            if (answer.style.height == '0px' || answer.style.height == 0) {
+                console.log(answer.style.height)
+                answer.style.height = '100px';
                 question.style.fontWeight = 'bold'
+            } else {
+                answer.style.height = 0;
+                question.style.fontWeight = 'normal'
             }
 
 
